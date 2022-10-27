@@ -1,4 +1,0 @@
-projetVersioning
-Kenza SCHULER
-B3-IW
-Outils de versioning
