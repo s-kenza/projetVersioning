@@ -1,6 +1,8 @@
 # projetVersioning
+
 ### Membres du projet
-- Jérémy
+
+- Jeremy A.
 - Kevin
 - Kenza
 - Omar
