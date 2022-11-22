@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/img/Favicon.png" type="image/x-icon">
+		<title>Awesome</title>
+		
+		<!-- css -->
+		
+		<!--  google fonts  -->
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body onload="countdown(year,month,day,hour,minute)">
+		<div class="body-wrapper">
+
+			<!--   begin of header section   -->
+			<section class="header" id="overlay-1">
+				<div class="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center">
+								<div class="theme-name">
+									<a href="#" class="title">Awesome</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<div class="header-text">
+									<p class="service-text">our awesome products and services are</p>
+									<p class="coming">coming soon</p>
+								</div>
+							</div>
+						</div>
+
+						<!--  begin of counter  -->
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="numbers" id="count2"></div>
+							</div>
+							<div class="col-md-12 counter1 text-center" id="spacer1">
+								<div class="col-md-4 col-xs-3 col-sm-4 day numbers" id="dday"></div>
+								<div class="col-md-2 col-xs-3 col-sm-2 hr numbers" id="dhour"></div>
+								<div class="col-md-2 col-xs-3 col-sm-2 min numbers" id="dmin"></div>
+								<div class="col-md-4 col-xs-3 col-sm-4 sec numbers" id="dsec"></div>
+							</div>
+							<div class="col-md-12 counter2 text-center" id="spacer2">
+								<div class="col-md-4 col-xs-3 col-sm-4 day title" id="days">day</div>
+								<div class="col-md-2 col-xs-3 col-sm-2 hr title" id="hours">hr</div>
+								<div class="col-md-2 col-xs-3 col-sm-2 min title" id="minutes">min</div>
+								<div class="col-md-4 col-xs-3 col-sm-4 sec title" id="seconds">sec</div>
+							</div>
+						</div>
+						<!--  end of counter -->
+					</div> <!--  end of .container  -->
+				</div><!-- end of .header-wrapper  -->
+			</section>
+			<!--   end of header section     -->
+
+			<!-- début FORMULAIRE -->
+			<h1>Candidater pour partir en voyage</h1>
+			<p>Notre société <strong>Évasion</strong> vous propose de découvrir en avant première des lieux paradisiaques que
+				nous souhaitons ajouter à notre catalogue. Merci de remplir les différents champs ci-dessous pour candidater au
+				poste d'<strong>Éva'discover</strong> !</p>
+			<form action="">
+				<fieldset>
+					<legend>Coordonnées</legend>
+					<div>
+						<label for="email">Votre email <i>(*)</i> :</label>
+						<input type="email" name="email" id="email" placeholder="emma@lapasserelle.school" required>
+					</div>
+					<div>
+						<label for="telephone">Votre téléphone :</label>
+						<input type="tel" name="phone" placeholder="0184805800" id="telephone" maxlength="10" pattern="^[0-9]*$"
+							title="Merci de saisir un numéro français sans préfixe ni espace (ex: 0492548598)">
+					</div>
+				</fieldset>
+				<!-- fin coordonnées -->
+		
+				<fieldset>
+					<legend>Informations personnelles</legend>
+					<div>
+						<label for="lastname">Votre nom :</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Elleressap">
+					</div>
+					<div>
+						<label for="firstname">Votre prénom :</label>
+						<input type="text" name="firstname" id="firstname" placeholder="Emma">
+					</div>
+					<hr>
+					<div class="label">
+						Vous êtes plutôt : <input type="radio" name="sexe" id="femme" value="female"><label for="femme">une
+							femme</label>
+						<input type="radio" name="sexe" id="homme" value="male"><label for="homme">un
+							homme</label>
+						<input type="radio" name="sexe" id="autre" value="other"><label for="autre">à déterminer</label>
+					</div>
+					<hr>
+					<div>
+						<label for="address">Votre adresse :</label>
+						<input type="text" name="address" id="address">
+					</div>
+					<div>
+						<label for="postal">Votre code postal :</label>
+						<input type="text" name="postal" id="postal" maxlength="5" pattern="^[0-9]*$"
+							title="Merci de saisir un code postal français métropolitain." size="5">
+					</div>
+					<div>
+						<label for="city">Votre ville :</label>
+						<input type="text" name="city" id="city">
+					</div>
+					<div>
+						<label for="dep">Votre département :</label>
+						<select name="dep" id="dep">
+							<option value="04">Alpes de Haute Provence</option>
+							<option value="05">Hautes-Alpes</option>
+							<option value="06">Alpes-Maritimes</option>
+							<option value="13">Bouches du Rhône</option>
+						</select>
+					</div>
+					<hr>
+					<div>
+						<p>Quel budget êtes vous prêt à investir pour valider votre candidature ?</p>
+						<label for="budget">Budget :</label>200€&nbsp;<input type="range" name="budget" id="budget" min="200"
+							value="1000" max="3000" step="100" list="money">&nbsp;3000€
+						<datalist id="money">
+							<option value="200" label="200€">
+							<option value="450">
+							<option value="600">
+							<option value="1000">
+							<option value="1500">
+							<option value="2000">
+							<option value="2500">
+							<option value="3000" label="3000€">
+						</datalist>
+					</div>
+				</fieldset>
+				<!-- fin informations personnelles -->
+		
+				<fieldset>
+					<legend>Langues</legend>
+					<p>Merci de cocher toutes les langues que vous pratiquez :</p>
+					<div class="label">
+						<input type="checkbox" name="lang[]" id="anglais" value="anglais">
+						<label for="anglais">anglais</label>
+						<input type="checkbox" name="lang[]" id="français" value="français">
+						<label for="français">français</label>
+						<input type="checkbox" name="lang[]" id="espagnol" value="espagnol">
+						<label for="espagnol">espagnol</label>
+						<input type="checkbox" name="lang[]" id="italien" value="italien">
+						<label for="italien">italien</label>
+						<input type="checkbox" name="lang[]" id="allemand" value="allemand">
+						<label for="allemand">allemand</label>
+						<input type="checkbox" name="lang[]" id="arménien" value="arménien">
+						<label for="arménien">arménien</label>
+		
+					</div>
+				</fieldset>
+				<!-- fin langues -->
+		
+				<fieldset>
+					<legend>Vos destinations de rêves</legend>
+					<div>
+						<label for="email">Choisir vos destinations :</label>
+						<select style="width:200px; height:150px;" name="destination" id="" multiple>
+							<optgroup label="Outre-mer">
+								<option value="Martinique">Martinique</option>
+								<option value="Réunion">Réunion</option>
+								<option value="Guadeloupe">Guadeloupe</option>
+								<option value="Guyane">Guyane</option>
+								<option value="Mayotte">Mayotte</option>
+							</optgroup>
+							<optgroup label="Étranger">
+								<option value="New-York">New-York</option>
+								<option value="Hawaï">Hawaï</option>
+								<option value="Cuba">Cuba</option>
+								<option value="Australie">Australie</option>
+								<option value="Brésil">Brésil</option>
+							</optgroup>
+						</select>
+					</div>
+					<small><i>Bien maintenir la touche CTRL enfoncée pour sélectionner plusieurs choix</i></small>
+				</fieldset>
+				<!-- fin destinations -->
+		
+				<input type="submit" value="Envoyer">
+			</form>
+			<!-- fin FORMULAIRE -->
+
+			<!--   begin of newsletter section  -->
+			<section class="newsletter text-center">
+				<div class="newsletter-wrapper">
+					<div class="container">
+						<div class="row">
+							<h2 class="newsletter-text">subscribe and stay tuned with us</h2>
+							<div class="col-md-8 col-md-offset-2">
+								<form>
+	  								<div class="form-group">
+	    								<div class="input-group">
+	      									<div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+	      									<input type="text" class="form-control" placeholder="Enter Your Email Here...">
+	    								</div>
+	    								<button class="subsribe-btn">Subscribe Now</button>
+	  								</div>
+								</form>
+								<p class="spam">
+									<i class="fa fa-bookmark"></i>We'll never spam you.
+								</p>
+							</div>
+						</div>
+					</div><!--  end of .container  -->
+				</div> <!--  end of .newssletter-wrapper  -->
+			</section>
+			<!--   end of newsletter section  -->
+
+			<!--   begin of social-media section  -->
+			<section class="social-media text-center">
+				<div class="social-media-wrapper">
+					<div class="container">
+						<div class="row">
+							<h2 class="social-media-text">get updates from social media</h2>
+							<div class="col-md-8 col-md-offset-2">
+								<div class="social-links">
+									<a target="_blank" href="#" title="Facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a target="_blank" href="#" title="Twitter">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a target="_blank" href="#" title="Google+">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a target="_blank" href="#" title="Pinterest">
+										<i class="fa fa-pinterest"></i>
+									</a>
+									<a target="_blank" href="" title="Instagram">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</div>
+							</div>
+							<div class="clear-fix"></div>
+						</div>
+					</div>
+				</div><!--  end of .social-media-wrapper  -->
+			</section>
+			<!--   end of social-media section   -->
+
+
+			<!--   begin of footer  section  -->
+			<section class="footer">
+				<div class="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="copy-right text-center">&copy; 2015 Awesome. All rights reserved.</p>
+							</div>
+							<div class="col-md-6">
+								<p class="develop text-center">Developed by <a href="http://themewagon.com">ThemeWagon <sup>TM</sup></a></p>
+							</div>
+						</div>
+					</div>
+				</div><!--  end of .footer-wrapper  -->
+			</section>
+			<!--   end of footer section  -->
+		</div>
+		
+		<!--  js files -->
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	
+	</body>
+</html>
