@@ -13,3 +13,4 @@
 2. Définition des différentes branches pour pouvoir travailler sur plusieurs fonctionnalités en parallèle et d'éviter de polluer la branche principale (main) avec du mauvais code.
 3. Omar a tout mis-à-jour !
 4. Expilcation Kev
+5. Kev a compris UwU
