@@ -18,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
 	<body onload="countdown(year,month,day,hour,minute)">
@@ -67,6 +68,136 @@
 				</div><!-- end of .header-wrapper  -->
 			</section>
 			<!--   end of header section     -->
+
+			<!-- début FORMULAIRE -->
+			<h1>Candidater pour partir en voyage</h1>
+			<p>Notre société <strong>Évasion</strong> vous propose de découvrir en avant première des lieux paradisiaques que
+				nous souhaitons ajouter à notre catalogue. Merci de remplir les différents champs ci-dessous pour candidater au
+				poste d'<strong>Éva'discover</strong> !</p>
+			<form action="">
+				<fieldset>
+					<legend>Coordonnées</legend>
+					<div>
+						<label for="email">Votre email <i>(*)</i> :</label>
+						<input type="email" name="email" id="email" placeholder="emma@lapasserelle.school" required>
+					</div>
+					<div>
+						<label for="telephone">Votre téléphone :</label>
+						<input type="tel" name="phone" placeholder="0184805800" id="telephone" maxlength="10" pattern="^[0-9]*$"
+							title="Merci de saisir un numéro français sans préfixe ni espace (ex: 0492548598)">
+					</div>
+				</fieldset>
+				<!-- fin coordonnées -->
+		
+				<fieldset>
+					<legend>Informations personnelles</legend>
+					<div>
+						<label for="lastname">Votre nom :</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Elleressap">
+					</div>
+					<div>
+						<label for="firstname">Votre prénom :</label>
+						<input type="text" name="firstname" id="firstname" placeholder="Emma">
+					</div>
+					<hr>
+					<div class="label">
+						Vous êtes plutôt : <input type="radio" name="sexe" id="femme" value="female"><label for="femme">une
+							femme</label>
+						<input type="radio" name="sexe" id="homme" value="male"><label for="homme">un
+							homme</label>
+						<input type="radio" name="sexe" id="autre" value="other"><label for="autre">à déterminer</label>
+					</div>
+					<hr>
+					<div>
+						<label for="address">Votre adresse :</label>
+						<input type="text" name="address" id="address">
+					</div>
+					<div>
+						<label for="postal">Votre code postal :</label>
+						<input type="text" name="postal" id="postal" maxlength="5" pattern="^[0-9]*$"
+							title="Merci de saisir un code postal français métropolitain." size="5">
+					</div>
+					<div>
+						<label for="city">Votre ville :</label>
+						<input type="text" name="city" id="city">
+					</div>
+					<div>
+						<label for="dep">Votre département :</label>
+						<select name="dep" id="dep">
+							<option value="04">Alpes de Haute Provence</option>
+							<option value="05">Hautes-Alpes</option>
+							<option value="06">Alpes-Maritimes</option>
+							<option value="13">Bouches du Rhône</option>
+						</select>
+					</div>
+					<hr>
+					<div>
+						<p>Quel budget êtes vous prêt à investir pour valider votre candidature ?</p>
+						<label for="budget">Budget :</label>200€&nbsp;<input type="range" name="budget" id="budget" min="200"
+							value="1000" max="3000" step="100" list="money">&nbsp;3000€
+						<datalist id="money">
+							<option value="200" label="200€">
+							<option value="450">
+							<option value="600">
+							<option value="1000">
+							<option value="1500">
+							<option value="2000">
+							<option value="2500">
+							<option value="3000" label="3000€">
+						</datalist>
+					</div>
+				</fieldset>
+				<!-- fin informations personnelles -->
+		
+				<fieldset>
+					<legend>Langues</legend>
+					<p>Merci de cocher toutes les langues que vous pratiquez :</p>
+					<div class="label">
+						<input type="checkbox" name="lang[]" id="anglais" value="anglais">
+						<label for="anglais">anglais</label>
+						<input type="checkbox" name="lang[]" id="français" value="français">
+						<label for="français">français</label>
+						<input type="checkbox" name="lang[]" id="espagnol" value="espagnol">
+						<label for="espagnol">espagnol</label>
+						<input type="checkbox" name="lang[]" id="italien" value="italien">
+						<label for="italien">italien</label>
+						<input type="checkbox" name="lang[]" id="allemand" value="allemand">
+						<label for="allemand">allemand</label>
+						<input type="checkbox" name="lang[]" id="arménien" value="arménien">
+						<label for="arménien">arménien</label>
+		
+					</div>
+				</fieldset>
+				<!-- fin langues -->
+		
+				<fieldset>
+					<legend>Vos destinations de rêves</legend>
+					<div>
+						<label for="email">Choisir vos destinations :</label>
+						<select style="width:200px; height:150px;" name="destination" id="" multiple>
+							<optgroup label="Outre-mer">
+								<option value="Martinique">Martinique</option>
+								<option value="Réunion">Réunion</option>
+								<option value="Guadeloupe">Guadeloupe</option>
+								<option value="Guyane">Guyane</option>
+								<option value="Mayotte">Mayotte</option>
+							</optgroup>
+							<optgroup label="Étranger">
+								<option value="New-York">New-York</option>
+								<option value="Hawaï">Hawaï</option>
+								<option value="Cuba">Cuba</option>
+								<option value="Australie">Australie</option>
+								<option value="Brésil">Brésil</option>
+							</optgroup>
+						</select>
+					</div>
+					<small><i>Bien maintenir la touche CTRL enfoncée pour sélectionner plusieurs choix</i></small>
+				</fieldset>
+				<!-- fin destinations -->
+		
+				<input type="submit" value="Envoyer">
+			</form>
+			<!-- fin FORMULAIRE -->
 
 			<!--   begin of newsletter section  -->
 			<section class="newsletter text-center">
@@ -125,6 +256,7 @@
 				</div><!--  end of .social-media-wrapper  -->
 			</section>
 			<!--   end of social-media section   -->
+
 
 			<!--   begin of footer  section  -->
 			<section class="footer">

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&display=swap');
+
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+    background-image: linear-gradient(to bottom right, rgba(230, 84, 198, 0.2), rgba(36, 171, 212, 0.2)), url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form div:not(.label) label {
+    width: 150px;
+    display: inline-block;
+}
+
+form .label label {
+    margin-right: 20px;
+}
